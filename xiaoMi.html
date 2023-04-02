@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/xiaoMi.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2830737_tp58cyeir6.css">
+    <!-- iconfont  -->
+    <script src="./js/xiaomi.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="topbar">
+            <!-- 内容区 -->
+            <div id="topiner">
+                <!-- 左侧导航栏区域 -->
+                <div id="topnav">
+                    <span class="topinfoL"><a class="topnav-a" href="">小米商城</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">MIUI</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">loT</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">云服务</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">天星数科</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">有品</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">小爱开放平台</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">企业团购</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">资质证照</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">协议规则</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL" id="dwapp">
+                        <a class="topnav-a" href="">下载app</a>
+                        <!-- 小三角 -->
+                        <div id="Trigo"></div>
+                        <!-- 下拉二维码板块 -->
+                        <div id="appcode">
+                            <img src="./icon/appcode.png" alt="">
+                            <br>
+                            <span style="font-size: 13px;">小米商城APP</span>
+                        </div>
+                    </span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">智能生活</a></span>
+                    <span class="sep">|</span>
+                    <span class="topinfoL"><a class="topnav-a" href="">Select Location</a></span>
+                </div>
+
+                <!-- 右侧用户板块 -->
+                <div id="topload">
+                    <a class="topnav-a" href="">登录</a>
+                    <span class="sep">|</span>
+                    <a class="topnav-a" href="">注册</a>
+                    <span class="sep">|</span>
+                    <a class="topnav-a" href="">消息通知</a>
+                </div>
+
+                <!-- 购物车板块 -->
+                <div id="topshopcar">
+                    <i class="iconfont icon-gouwuche" id="gouwuche"></i>
+                    <a class="topnav-a" href="">购物车 (0)</a>
+                    <div id="shopcar">
+                        <span>购物车中还没有商品，赶紧选购吧!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 主页面显示导航区域 -->
+    <div class="mainInfo">
+        <div id="container">
+            <a id="logo" href="">
+                <img src="./icon/logo-mi2.png" alt="">
+            </a>
+            <div id="navbox">
+                <a class="shangpin-b" href=""><span>Xiaomi手机</span></a>
+                <a class="shangpin-b" href=""><span>Redmi 红米</span></a>
+                <a class="shangpin-b" href=""><span>电视</span></a>
+                <a class="shangpin-b" href=""><span>笔记本</span></a>
+                <a class="shangpin-b" href=""><span>平板</span></a>
+                <a class="shangpin-b" href=""><span>家电</span></a>
+                <a class="shangpin-b" href=""><span>路由器</span></a>
+                <a href=""><span>服务</span></a>
+                <a href=""><span>社区</span></a>
+            </div>
+            <div id="search">
+                <input type="text" id="search-text" placeholder="空调">
+                <!-- 245*240 -->
+                <div id="serch-text-xl">
+                    <a href="">
+                        <p class="st-info">全部商品</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">红米</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">电视</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">小米平板5 Pro</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">洗衣机</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">空调</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">冰箱</p>
+                    </a>
+                    <a href="">
+                        <p class="st-info">耳机</p>
+                    </a>
+                </div>
+                <input type="button" id="search-icon"><i class="iconfont icon-fangdajing" id="search-i"></i>
+            </div>
+            <!-- 第二行对应下拉菜单 -->
+
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/phone/phone1.webp" alt="">
+                    <p class="sp-main">Xiaomi 12 Pro</p>
+                    <p class="sp-info">4699元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone2.webp" alt="">
+                    <p class="sp-main">Xiaomi 12</p>
+                    <p class="sp-info">3699元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone3.webp" alt="">
+                    <p class="sp-main">Xiaomi 12X</p>
+                    <p class="sp-info">3199元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone4.webp" alt="">
+                    <p class="sp-main">Xiaomi 11 青春活力版</p>
+                    <p class="sp-info">1999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone5.webp" alt="">
+                    <p class="sp-main">Xiaomi Civi</p>
+                    <p class="sp-info">2599元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone6.webp" alt="">
+                    <p class="sp-main">Xiaomi MIX 4</p>
+                    <p class="sp-info">4199元起</p>
+                </a>
+            </div>
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/Redmi/Redmi1.webp" alt="">
+                    <p class="sp-main">Redmi Note 11 Pro系列</p>
+                    <p class="sp-info">1799元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/Redmi/Redmi2.webp" alt="">
+                    <p class="sp-main">Redmi Note 11 5G</p>
+                    <p class="sp-info">1199元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/Redmi/Redmi3.webp" alt="">
+                    <p class="sp-main">Redmi Note 11 4G</p>
+                    <p class="sp-info">999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/Redmi/Redmi4.webp" alt="">
+                    <p class="sp-main">Redmi Note 10 Pro</p>
+                    <p class="sp-info">1499元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/Redmi/Redmi5.webp" alt="">
+                    <p class="sp-main">Redmi Note 10 5G</p>
+                    <p class="sp-info">1099元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/Redmi/Redmi6.webp" alt="">
+                    <p class="sp-main">K40 游戏增强版</p>
+                    <p class="sp-info">1999元起</p>
+                </a>
+            </div>
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/tv/tv1.webp" alt="">
+                    <p class="sp-main">Redmi智能电视X55 2022</p>
+                    <p class="sp-info">2699元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/tv/tv2.webp" alt="">
+                    <p class="sp-main">Redmi智能电视X65 2022</p>
+                    <p class="sp-info">3499元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/tv/tv3.webp" alt="">
+                    <p class="sp-main">小米电视6 65" OLED</p>
+                    <p class="sp-info">6999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/tv/tv4.webp" alt="">
+                    <p class="sp-main">小米电视 大师 77" OLED</p>
+                    <p class="sp-info">17999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/tv/tv5.webp" alt="">
+                    <p class="sp-main">小米透明电视</p>
+                    <p class="sp-info">39999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/tv/tv6.webp" alt="">
+                    <p class="sp-main">小米电视 大师 65英寸OLED</p>
+                    <p class="sp-info">8999元起</p>
+                </a>
+            </div>
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/biJiBen/biJiBen1.webp" alt="">
+                    <p class="sp-main">RedmiBook Pro 14 增强版</p>
+                    <p class="sp-info">4999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/biJiBen/biJiBen2.webp" alt="">
+                    <p class="sp-main">小米笔记本 Pro 14 锐龙版</p>
+                    <p class="sp-info">5499元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/biJiBen/biJiBen3.webp" alt="">
+                    <p class="sp-main">RedmiBook Pro 15 增强版</p>
+                    <p class="sp-info">5299元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/biJiBen/biJiBen4.webp" alt="">
+                    <p class="sp-main">小米笔记本Pro X 14</p>
+                    <p class="sp-info">7999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/biJiBen/biJiBen5.webp" alt="">
+                    <p class="sp-main">Redmi G 2021 Intel版</p>
+                    <p class="sp-info">6499元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/biJiBen/biJiBen6.webp" alt="">
+                    <p class="sp-main">Redmi G 2021 AMD版</p>
+                    <p class="sp-info">7999元起</p>
+                </a>
+            </div>
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/pad/pad1.webp" alt="">
+                    <p class="sp-main">小米平板5</p>
+                    <p class="sp-info">1999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/pad/pad.webp" alt="">
+                    <p class="sp-main">小米平板5 Pro 5G</p>
+                    <p class="sp-info">3499元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/pad/pad3.webp" alt="">
+                    <p class="sp-main">小米平板5 Pro</p>
+                    <p class="sp-info">2499元起</p>
+                </a>
+                <!-- <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone4.webp" alt="">
+                    <p class="sp-main"></p>
+                    <p class="sp-info">1999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone5.webp" alt="">
+                    <p class="sp-main">Xiaomi Civi</p>
+                    <p class="sp-info">2599元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone6.webp" alt="">
+                    <p class="sp-main"></p>
+                    <p class="sp-info">4199元起</p>
+                </a> -->
+            </div>
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/jiaDian/jiaDian1.webp" alt="">
+                    <p class="sp-main">米家风冷对开门冰箱 483L</p>
+                    <p class="sp-info">2399元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/jiaDian/jiaDian2.webp" alt="">
+                    <p class="sp-main">米家扫拖机器人1T</p>
+                    <p class="sp-info">1799元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/jiaDian/jiaDian3.webp" alt="">
+                    <p class="sp-main">小米净水器S1 800G</p>
+                    <p class="sp-info">1799元起</p>
+                </a>
+                <!-- <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone4.webp" alt="">
+                    <p class="sp-main">Xiaomi 11 青春活力版</p>
+                    <p class="sp-info">1999元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone5.webp" alt="">
+                    <p class="sp-main">Xiaomi Civi</p>
+                    <p class="sp-info">2599元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/phone/phone6.webp" alt="">
+                    <p class="sp-main">Xiaomi MIX 4</p>
+                    <p class="sp-info">4199元起</p>
+                </a> -->
+            </div>
+        </div>
+        <div class="shangpinnav">
+            <div class="shangpinbox">
+                <!-- 170*160 -->
+                <a href="" class="shagnpin"><img src="./img/router/router1.webp" alt="">
+                    <p class="sp-main">小米路由器AX6000</p>
+                    <p class="sp-info">599元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/router/router2.webp" alt="">
+                    <p class="sp-main">小米路由器AX9000</p>
+                    <p class="sp-info">1299元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/router/router3.webp" alt="">
+                    <p class="sp-main">Redmi路由器AC2100</p>
+                    <p class="sp-info">199元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/router/router4.jpg" alt="">
+                    <p class="sp-main">小米路由器4A 千兆版</p>
+                    <p class="sp-info">129元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/router/router5.jpg" alt="">
+                    <p class="sp-main">小米路由器 4C</p>
+                    <p class="sp-info">2599元起</p>
+                </a>
+                <div class="sp-i"></div>
+                <a href="" class="shagnpin"><img src="./img/router/router6.png" alt="">
+                    <p class="sp-main">
+                        查看全部
+                        <br>
+                        小米路由器
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图和导航栏区域 -->
+    <div id="three">
+        <!-- 内容框架 -->
+        <div id="honme-hero">
+            <!-- 导航栏 -->
+            <!-- 235*460 -->
+            <ul id="categoryList">
+                <li class="category-item" id="item-phone"><a href="">手机<i
+                            class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="phonelist-1">
+                            <li><a href=""><span>Xiaomi 12 Pro</span></a></li>
+                            <li><a href=""><span>Xiaomi 12</span></a></li>
+                            <li><a href=""><span>Xiaomi 12X</span></a></li>
+                            <li><a href=""><span>Xiaomi 11 青春活力版</span></a></li>
+                            <li><a href=""><span>Note 11 Pro 系列</span></a></li>
+                            <li><a href=""><span>Note 11 4G</span></a></li>
+                        </ul>
+                        <ul id="phonelist-2">
+                            <li><a href=""><span>Note 11 5G</span></a></li>
+                            <li><a href=""><span>Redmi K40</span></a></li>
+                            <li><a href=""><span>Xiaomi Civi</span></a></li>
+                            <li><a href=""><span>Xiaomi MIX4</span></a></li>
+                            <li><a href=""><span>Xiaomi MIX FOLD</span></a></li>
+                            <li><a href=""><span>Xiaomi 11 Ultra</span></a></li>
+                        </ul>
+                        <ul id="phonelist-3">
+                            <li><a href=""><span>Xiaomi 11 Pro</span></a></li>
+                            <li><a href=""><span>Xiaomi 11</span></a></li>
+                            <li><a href=""><span>Xiaomi 10S</span></a></li>
+                            <li><a href=""><span>K40 游戏增强版</span></a></li>
+                            <li><a href=""><span>K40 Pro 系列</span></a></li>
+                            <li><a href=""><span>Note 10 5G</span></a></li>
+                        </ul>
+                        <ul id="phonelist-4">
+                            <li><a href=""><span>Note 10 Pro</span></a></li>
+                            <li><a href=""><span>Redmi 9A</span></a></li>
+                            <li><a href=""><span>Xiaomi 11 青春</span></a></li>
+                            <li><a href=""><span>黑鲨4S Pro</span></a></li>
+                            <li><a href=""><span>黑鲨4S</span></a></li>
+                            <li><a href=""><span>Redmi Note 9 4G</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="category-item"><a href="">电视<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="tv-1">
+                            <li><a href=""><span>Redmi X65 2022款</span></a></li>
+                            <li><a href=""><span>Redmi X55 2022款</span></a></li>
+                            <li><a href=""><span>小米拍拍4K高清投屏器</span></a></li>
+                            <li><a href=""><span>小米电视6 55" OLED</span></a></li>
+                            <li><a href=""><span>小米电视6 65" OLED</span></a></li>
+                            <li><a href=""><span>小米电视 大师 77" OLED</span></a></li>
+                        </ul>
+                        <ul id="tv-2">
+                            <li><a href=""><span>小米电视6 至尊版 55英寸</span></a></li>
+                            <li><a href=""><span>小米电视6 至尊版 65英寸</span></a></li>
+                            <li><a href=""><span>小米电视6 至尊版 75英寸</span></a></li>
+                            <li><a href=""><span>小米电视 ES43 2022款</span></a></li>
+                            <li><a href=""><span>小米电视 ES55 2022款</span></a></li>
+                            <li><a href=""><span>小米电视 ES65 2022款</span></a></li>
+                        </ul>
+                        <ul id="tv-3">
+                            <li><a href=""><span>小米电视 ES75 2022款</span></a></li>
+                            <li><a href=""><span>小米全面屏电视E43K</span></a></li>
+                            <li><a href=""><span>金属全面屏电视</span></a></li>
+                            <li><a href=""><span>大师电视 65英寸 OLED</span></a></li>
+                            <li><a href=""><span>小米电视5 Pro 75英寸</span></a></li>
+                            <li><a href=""><span>小米电视4A 60英寸</span></a></li>
+                        </ul>
+                        <ul id="tv-4">
+                            <li><a href=""><span>Redmi 智能电视 X55</span></a></li>
+                            <li><a href=""><span>小米全面屏电视</span></a></li>
+                            <li><a href=""><span>米家激光投影仪</span></a></li>
+                            <li><a href=""><span>Redmi 智能电视 MAX 98"</span></a></li>
+                            <li><a href=""><span>小米电视5 75英寸</span></a></li>
+                            <li><a href=""><span>小米电视4A 70英寸</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="category-item"><a href="">笔记本 平板<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="pad-1">
+                            <li><a href=""><span>RedmiBook Pro 14 增强版</span></a></li>
+                            <li><a href=""><span>小米笔记本 Pro 14 锐龙版</span></a></li>
+                            <li><a href=""><span>RedmiBook Pro 15 增强版</span></a></li>
+                            <li><a href=""><span>小米笔记本 Pro X 14</span></a></li>
+                            <li><a href=""><span>Redmi G 2021 Intel版</span></a></li>
+                            <li><a href=""><span>Redmi G 2021 AMD版</span></a></li>
+                        </ul>
+                        <ul id="pad-2">
+                            <li><a href=""><span>小米平板5</span></a></li>
+                            <li><a href=""><span>小米平板5 Pro</span></a></li>
+                            <li><a href=""><span>小米平板5 Pro 5G</span></a></li>
+                            <li><a href=""><span>小米笔记本 Pro 14 增强版</span></a></li>
+                            <li><a href=""><span>小米笔记本 Pro 15 增强版</span></a></li>
+                            <li><a href=""><span>小米笔记本 Pro X 15</span></a></li>
+                        </ul>
+                        <ul id="pad-3">
+                            <li><a href=""><span>RedmiBook Pro 14 锐龙版</span></a></li>
+                            <li><a href=""><span>RedmiBook Pro 15 锐龙版</span></a></li>
+                            <li><a href=""><span>小米笔记本 Pro 15 锐龙版</span></a></li>
+                            <li><a href=""><span>小米笔记本Pro 15</span></a></li>
+                            <li><a href=""><span>小米笔记本Pro 14</span></a></li>
+                            <li><a href=""><span>RedmiBook Air 13</span></a></li>
+                        </ul>
+                        <ul id="pad-4">
+                            <li><a href=""><span>键鼠套装</span></a></li>
+                            <li><a href=""><span>鼠标</span></a></li>
+                            <!-- <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li> -->
+                        </ul>
+                    </div>
+                </li>
+                <li class="category-item"><a href="">家电<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="jiaDian-1">
+                            <li><a href=""><span>冰箱</span></a></li>
+                            <li><a href=""><span>立式空调</span></a></li>
+                            <li><a href=""><span>壁挂空调</span></a></li>
+                            <li><a href=""><span>滚筒洗衣机</span></a></li>
+                            <li><a href=""><span>Redmi全自动波轮洗衣机</span></a></li>
+                            <li><a href=""><span>净水器</span></a></li>
+                        </ul>
+                        <ul id="jiaDian-2">
+                            <li><a href=""><span>微波炉</span></a></li>
+                            <li><a href=""><span>电烤箱</span></a></li>
+                            <li><a href=""><span>扫地机器人</span></a></li>
+                            <li><a href=""><span>吸尘器</span></a></li>
+                            <li><a href=""><span>空气净化器</span></a></li>
+                            <li><a href=""><span>电饭煲</span></a></li>
+                        </ul>
+                        <ul id="jiaDian-3">
+                            <li><a href=""><span>电磁炉</span></a></li>
+                            <li><a href=""><span>电水壶</span></a></li>
+                            <li><a href=""><span>滤水壶</span></a></li>
+                            <li><a href=""><span>落地风扇</span></a></li>
+                            <li><a href=""><span>投影仪</span></a></li>
+                            <li><a href=""><span>灯具</span></a></li>
+                        </ul>
+                        <ul id="jiaDian-4">
+                            <li><a href=""><span>插线板</span></a></li>
+                            <li><a href=""><span>新风机</span></a></li>
+                            <li><a href=""><span>电暖器</span></a></li>
+                            <li><a href=""><span>电压力锅</span></a></li>
+                            <li><a href=""><span>料理机</span></a></li>
+                            <li><a href=""><span>电煮壶</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="category-item"><a href="">出行 穿戴<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="chuXing-1">
+                            <li><a href=""><span>Xiaomi Watch S1</span></a></li>
+                            <li><a href=""><span>Redmi 手表 2</span></a></li>
+                            <li><a href=""><span>Xiaomi Watch Color 2</span></a></li>
+                            <li><a href=""><span>小米手环6 NFC版</span></a></li>
+                            <li><a href=""><span>小米手环6 标准版</span></a></li>
+                            <li><a href=""><span>Redmi 手表</span></a></li>
+                        </ul>
+                        <ul id="chuXing-2">
+                            <li><a href=""><span>小米手环5 NFC</span></a></li>
+                            <li><a href=""><span>小米手环5</span></a></li>
+                            <li><a href=""><span>平衡车</span></a></li>
+                            <li><a href=""><span>滑板车</span></a></li>
+                            <li><a href=""><span>自行车</span></a></li>
+                            <li><a href=""><span>车载充电器</span></a></li>
+                        </ul>
+                        <ul id="chuXing-3">
+                            <li><a href=""><span>智能记录仪</span></a></li>
+                            <li><a href=""><span>充气宝</span></a></li>
+                            <li><a href=""><span>石英表</span></a></li>
+                            <!-- <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li> -->
+                        </ul>
+                        <!-- <ul id="chuXing-4">
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul> -->
+                    </div>
+                </li>
+                <li class="category-item"><a href="">智能 路由器<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="zhiNeng-1">
+                            <li><a href=""><span>CyberDog</span></a></li>
+                            <li><a href=""><span>MIJIA K歌麦克风</span></a></li>
+                            <li><a href=""><span>打印机</span></a></li>
+                            <li><a href=""><span>喷墨打印机</span></a></li>
+                            <li><a href=""><span>喷墨打印机墨水</span></a></li>
+                            <li><a href=""><span>小米路由器</span></a></li>
+                        </ul>
+                        <ul id="zhiNeng-2">
+                            <li><a href=""><span>智能家庭</span></a></li>
+                            <li><a href=""><span>对讲机</span></a></li>
+                            <li><a href=""><span>摄像机</span></a></li>
+                            <li><a href=""><span>智能门锁</span></a></li>
+                            <li><a href=""><span>视频门铃</span></a></li>
+                            <li><a href=""><span>小爱老师</span></a></li>
+                        </ul>
+                        <ul id="zhiNeng-3">
+                            <li><a href=""><span>Redmi路由器</span></a></li>
+                            <li><a href=""><span>小爱音箱</span></a></li>
+                            <!-- <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li> -->
+                        </ul>
+                        <!-- <ul id="zhiNeng-4">
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul> -->
+                    </div>
+                </li>
+                <li class="category-item"><a href="">电源 配件<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="dianYuan-1">
+                            <li><a href=""><span>移动电源</span></a></li>
+                            <li><a href=""><span>数据线</span></a></li>
+                            <li><a href=""><span>充电器</span></a></li>
+                            <li><a href=""><span>电池</span></a></li>
+                            <li><a href=""><span>自拍杆</span></a></li>
+                            <li><a href=""><span>手机壳</span></a></li>
+                        </ul>
+                        <ul id="dianYuan-2">
+                            <li><a href=""><span>手机贴膜</span></a></li>
+                            <li><a href=""><span>无线充电器</span></a></li>
+                            <li><a href=""><span>平板配件</span></a></li>
+                            <li><a href=""><span>黑鲨配件</span></a></li>
+                            <li><a href=""><span>其他配件</span></a></li>
+                            <!-- <li><a href=""><span></span></a></li> -->
+                        </ul>
+                        <!-- <ul id="dianYuan-3">
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul>
+                        <ul id="dianYuan-4">
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul> -->
+                    </div>
+                </li>
+                <li class="category-item"><a href="">健康 儿童<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="jianKang-1">
+                            <li><a href=""><span>米家跑步机</span></a></li>
+                            <li><a href=""><span>洗手机</span></a></li>
+                            <li><a href=""><span>剃须刀</span></a></li>
+                            <li><a href=""><span>修剪器</span></a></li>
+                            <li><a href=""><span>牙刷</span></a></li>
+                            <li><a href=""><span>吹风机</span></a></li>
+                        </ul>
+                        <ul id="jianKang-2">
+                            <li><a href=""><span>体重秤</span></a></li>
+                            <li><a href=""><span>体脂秤</span></a></li>
+                            <li><a href=""><span>早教启智</span></a></li>
+                            <li><a href=""><span>益智积木</span></a></li>
+                            <li><a href=""><span>儿童手表</span></a></li>
+                            <li><a href=""><span>儿童滑板车</span></a></li>
+                        </ul>
+                        <ul id="jianKang-3">
+                            <li><a href=""><span>婴儿推车</span></a></li>
+                            <li><a href=""><span>理发器</span></a></li>
+                            <li><a href=""><span>走步机</span></a></li>
+                            <li><a href=""><span>智能遥控车</span></a></li>
+                            <!-- <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li> -->
+                        </ul>
+                        <!-- <ul id="jianKang-4">
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul> -->
+                    </div>
+                </li>
+                <li class="category-item"><a href="">耳机 音箱<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="erJi-1">
+                            <li><a href=""><span>Xiaomi 真无线降噪耳机 3</span></a></li>
+                            <li><a href=""><span>Redmi Buds 3 青春版</span></a></li>
+                            <li><a href=""><span>Redmi Buds 3</span></a></li>
+                            <li><a href=""><span>Xiaomi Sound</span></a></li>
+                            <li><a href=""><span>小爱触屏音箱Pro 8</span></a></li>
+                            <li><a href=""><span>Redmi小爱触屏音箱 8</span></a></li>
+                        </ul>
+                        <ul id="erJi-2">
+                            <li><a href=""><span>小爱音箱 Pro</span></a></li>
+                            <li><a href=""><span>小米小爱音箱</span></a></li>
+                            <li><a href=""><span>小米小爱触屏音箱</span></a></li>
+                            <li><a href=""><span>Redmi音箱</span></a></li>
+                            <li><a href=""><span>小米小爱音箱 Play</span></a></li>
+                            <li><a href=""><span>线控耳机</span></a></li>
+                        </ul>
+                        <ul id="erJi-3">
+                            <li><a href=""><span>蓝牙耳机</span></a></li>
+                            <li><a href=""><span>头戴耳机</span></a></li>
+                            <li><a href=""><span>品牌耳机</span></a></li>
+                            <li><a href=""><span>蓝牙音箱</span></a></li>
+                            <li><a href=""><span>小米AI音箱</span></a></li>
+                            <li><a href=""><span>小米小爱音箱HD</span></a></li>
+                        </ul>
+                        <ul id="erJi-4">
+                            <li><a href=""><span>K歌耳机</span></a></li>
+                            <!-- <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li> -->
+                        </ul>
+                    </div>
+                </li>
+                <li class="category-item"><a href="">生活 箱包<i class="iconfont icon-jiantouyou cate-i"></i></a>
+                    <div class="three-xl">
+                        <ul id="shengHuo-1">
+                            <li><a href=""><span>小背包</span></a></li>
+                            <li><a href=""><span>双肩包</span></a></li>
+                            <li><a href=""><span>胸包</span></a></li>
+                            <li><a href=""><span>旅行箱</span></a></li>
+                            <li><a href=""><span>运动鞋</span></a></li>
+                            <li><a href=""><span>眼镜</span></a></li>
+                        </ul>
+                        <ul id="shengHuo-2">
+                            <li><a href=""><span>床垫</span></a></li>
+                            <li><a href=""><span>枕头</span></a></li>
+                            <li><a href=""><span>螺丝刀</span></a></li>
+                            <li><a href=""><span>保温杯</span></a></li>
+                            <li><a href=""><span>驱蚊器</span></a></li>
+                            <li><a href=""><span>毛巾/浴巾</span></a></li>
+                        </ul>
+                        <ul id="shengHuo-3">
+                            <li><a href=""><span>米兔</span></a></li>
+                            <li><a href=""><span>笔</span></a></li>
+                            <!--<li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li> -->
+                        </ul>
+                        <!-- <ul id="shengHuo-4">
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                            <li><a href=""><span></span></a></li>
+                        </ul> -->
+                    </div>
+                </li>
+            </ul>
+            <!-- 轮播图 -->
+            <div id="lunbotubox">
+                <!-- 按钮 -->
+                <!-- 40*70 -->
+                <button id="pre" class="lunbotuBtn"><i class="iconfont icon-xiaoyuhao"></i></button>
+                <button id="next" class="lunbotuBtn"><i class="iconfont icon-dayuhao"></i></button>
+                <a href=""><img id="lunbo" src="./img/lunbotu/lunbotu1.jpg" alt=""></a>
+                <ul id='circlebox'>
+                    <a href="javascript:;">
+                        <li class="circle circlemain"></li>
+                    </a>
+                    <a href="javascript:">
+                        <li class="circle"></li>
+                    </a>
+                    <a href="javascript:">
+                        <li class="circle"></li>
+                    </a>
+                    <a href="javascript:">
+                        <li class="circle"></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 第四行 -->
+    <!-- 1226*170 -->
+    <div id="four">
+        <div id="four-home">
+            <ul id="funar">
+                <li><a href=""><i class="iconfont icon-shizhong"></i><span>保障服务</span></a></li>
+                <li><a href=""><i class="iconfont icon-dalou"></i><span>企业团购</span></a></li>
+                <li><a href=""><i class="iconfont icon-F"></i><span>F码通道</span></a></li>
+                <li><a href=""><i class="iconfont icon-SIMka"></i><span>米粉卡</span></a></li>
+                <li><a href=""><i class="iconfont icon-qian"></i><span>以旧换新</span></a></li>
+                <li><a href=""><i class="iconfont icon-shoujichongzhi"></i><span>话费充值</span></a></li>
+            </ul>
+            <a href="" class="fourad"><img src="./img/four/four-1.jpg" alt=""></a>
+            <a href="" class="fourad"><img src="./img/four/four2.png" alt=""></a>
+            <a href="" class="fourad"><img src="./img/four/four3.jpeg" alt=""></a>
+        </div>
+    </div>
+    <!-- 服务区域 -->
+
+    <!-- 产品区 -->
+    <section>
+        <div id="ad-1"><a href=""><img src="./img/ad/ad1.webp" alt=""></a></div>
+        <!-- 手机板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>手机
+                <div class='more'>
+                    <a href="">查看更多<i class="iconfont icon-jinrujiantouxiao"></i></a>
+                </div>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 248*614px   margin: b--14px l--14px -->
+            <div id="phone-adl">
+                <a href="">
+                    <img src="./img/phone-ad/phone-ad1.webp" alt="">
+                </a>
+            </div>
+
+            <!-- 图片区右侧 -->
+            <!-- 992*614  margin: b--14px l--14px -->
+            <ul id='phone-adr'>
+                <!-- 234*300  margin: b-14px l-14px -->
+                <li class="phone-adlis">
+                    <!-- 234*260 padding：20px 0 ; -->
+                    <a href="">
+                        <!-- 160*160 marign: 0 37px 18px 37px -->
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad2.webp" alt=""></div>
+                        <!-- 214*21  margin: 0 10px 2px 10px -->
+                        <h3 class="ad-title">Xiaomi 12 Pro</h3>
+                        <!-- 214*18  margin: 0 10px 10px 10px -->
+                        <p class="desc">全新骁龙8 | 2K AMOLED屏幕</p>
+                        <!-- 214*21  margin: 0 10px 14px 10px -->
+                        <p class="price">
+                            <span class="num">4699元起</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad3.webp" alt=""></div>
+                        <h3 class="ad-title">Xiaomi 12</h3>
+                        <p class="desc">全新骁龙8 | 5000万主摄</p>
+                        <p class="price">
+                            <span class="num">3699元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">Xiaomi 12X</h3>
+                        <p class="desc">骁龙870 | 5000万主摄</p>
+                        <p class="price">
+                            <span class="num">3199元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad5.webp" alt=""></div>
+                        <h3 class="ad-title">Xiaomi 11 青春活力版</h3>
+                        <p class="desc">轻薄5G，内外皆出彩</p>
+                        <p class="price">
+                            <span class="num">1999元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">Redmi Note 11 Pro系列</h3>
+                        <p class="desc">三星AMOLED高刷屏</p>
+                        <p class="price">
+                            <span class="num">1799元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">Redmi Note 11 5G</h3>
+                        <p class="desc">5000mAh大电池</p>
+                        <p class="price">
+                            <span class="num">1199元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">Redmi Note 11 4G</h3>
+                        <p class="desc">5000mAh大电池</p>
+                        <p class="price">
+                            <span class="num">999元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="">
+                        <div class="phone-adimgbox"><img src="./img/phone-ad/phone-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">黑鲨4S Pro</h3>
+                        <p class="desc">磁动力升降肩键</p>
+                        <p class="price">
+                            <span class="num">4799元起</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 智能穿戴板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>智能穿戴
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">热门</a></li>
+                    <li><a href="javascript:;">穿戴</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 248*614px   margin: b--14px l--14px -->
+            <div id="phone-adl">
+                <a href="javascript:;">
+                    <img src="./img/chuandai-ad/chuandai1.webp" alt="">
+                </a>
+            </div>
+
+            <!-- 图片区右侧 -->
+            <!-- 992*614  margin: b--14px l--14px -->
+            <ul id='phone-adr'>
+                <!-- 234*300  margin: b-14px l-14px -->
+                <li class="phone-adlis">
+                    <!-- 234*260 padding：20px 0 ; -->
+                    <a href="javascript:;">
+                        <!-- 160*160 marign: 0 37px 18px 37px -->
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai2.webp" alt=""></div>
+                        <!-- 214*21  margin: 0 10px 2px 10px -->
+                        <h3 class="ad-title">小米手环6</h3>
+                        <!-- 214*18  margin: 0 10px 10px 10px -->
+                        <p class="desc">全屏实力</p>
+                        <!-- 214*21  margin: 0 10px 14px 10px -->
+                        <p class="price">
+                            <span class="num">229元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai3.webp" alt=""></div>
+                        <h3 class="ad-title">小米手环5 NFC版</h3>
+                        <p class="desc">多功能NFC 11种运动模式</p>
+                        <p class="price">
+                            <span class="num">229元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai4.webp" alt=""></div>
+                        <h3 class="ad-title">小米手环5</h3>
+                        <p class="desc">磁吸式充电</p>
+                        <p class="price">
+                            <span class="num">189元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai5.webp" alt=""></div>
+                        <h3 class="ad-title">Redmi AirDots 3真无线蓝牙耳机</h3>
+                        <p class="desc">圈铁音质，超长续航</p>
+                        <p class="price">
+                            <span class="num">199元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai6.webp" alt=""></div>
+                        <h3 class="ad-title">小米真无线蓝牙耳机Air 2 Pro</h3>
+                        <p class="desc">主动降噪/持久续航/无线充</p>
+                        <p class="price">
+                            <span class="num">699元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai7.webp" alt=""></div>
+                        <h3 class="ad-title">小米真无线蓝牙耳机Air2 SE</h3>
+                        <p class="desc">放肆用，畅快听</p>
+                        <p class="price">
+                            <span class="num">169元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chuandai-ad/chuandai-ad10.webp" alt=""></div>
+                        <h3 class="ad-title">Xiaomi真无线降噪耳机3</h3>
+                        <p class="desc">静听好声音</p>
+                        <p class="price">
+                            <span class="num">499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo-t">
+                            <h2 class="liulangengduo-p-t">Redmi Buds 3<br>青春版</h2>
+                            <p class="jiage-t">99元</p>
+                            <div class="liulangengduo-t-img"><img src="./img/chuandai-ad/chuandai-ad11.webp" alt=""></div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">穿戴</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- 家电板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>家电
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">热门</a></li>
+                    <li><a href="javascript:;">电视影音</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 235* 300px  -->
+            <ul id="c-phone-adl">
+                <li><a href="javascript:;"><img src="./img/tv-ad/tv-ad1.webp" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/tv-ad/tv-ad2.webp" alt=""></a></li>
+            </ul>
+
+            <!-- 图片区右侧 -->
+            <ul id='phone-adr'>
+                <li class="phone-adlis">
+                    <!-- 234*260 padding：20px 0 ; -->
+                    <a href="javascript:;">
+                        <!-- 160*160 marign: 0 37px 18px 37px -->
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad3.webp" alt=""></div>
+                        <!-- 214*21  margin: 0 10px 2px 10px -->
+                        <h3 class="ad-title">小米电视6 65" OLED</h3>
+                        <!-- 214*18  margin: 0 10px 10px 10px -->
+                        <p class="desc">OLED自发光屏，百万级对比度</p>
+                        <!-- 214*21  margin: 0 10px 14px 10px -->
+                        <p class="price">
+                            <span class="num">6999元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">小米电视6 至尊版 65英寸</h3>
+                        <p class="desc">百级分区背光，双120Hz高刷</p>
+                        <p class="price">
+                            <span class="num">7999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad5.webp" alt=""></div>
+                        <h3 class="ad-title">小米电视 ES55 2022款</h3>
+                        <p class="desc">多分区背光，8K解码+MEMC</p>
+                        <p class="price">
+                            <span class="num">2999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">米家互联网对开门冰箱 540L</h3>
+                        <p class="desc">重磅新品福利特惠</p>
+                        <p class="price">
+                            <span class="num">3699元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">米家超薄电磁炉</h3>
+                        <p class="desc">纤薄美学，精准猛火</p>
+                        <p class="price">
+                            <span class="num">499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">米家集尘扫拖机器人</h3>
+                        <p class="desc">自动倒垃圾，45天手不沾尘</p>
+                        <p class="price">
+                            <span class="num">2999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/tv-ad/tv-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">米家电烤箱</h3>
+                        <p class="desc">全能烘焙体验</p>
+                        <p class="price">
+                            <span class="num">329元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">热门</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- 生活电器板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>生活电器
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">扫地机</a></li>
+                    <li><a href="javascript:;">空净</a></li>
+                    <li><a href="javascript:;">清洁</a></li>
+                    <li><a href="javascript:;">风扇</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 235* 300px  -->
+            <ul id="c-phone-adl">
+                <li><a href="javascript:;"><img src="./img/shenghuo-ad/shenghuodianqi-ad1.webp" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/shenghuo-ad/shenghuodianqi-ad2.webp" alt=""></a></li>
+            </ul>
+
+            <!-- 图片区右侧 -->
+            <ul id='phone-adr'>
+                <li class="phone-adlis">
+                    <!-- 234*260 padding：20px 0 ; -->
+                    <a href="javascript:;">
+                        <!-- 160*160 marign: 0 37px 18px 37px -->
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad3.webp" alt=""></div>
+                        <!-- 214*21  margin: 0 10px 2px 10px -->
+                        <h3 class="ad-title">米家扫拖机器人 2Pro</h3>
+                        <!-- 214*18  margin: 0 10px 10px 10px -->
+                        <p class="desc">扫拖除菌一步到位</p>
+                        <!-- 214*21  margin: 0 10px 14px 10px -->
+                        <p class="price">
+                            <span class="num">2699元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">米家扫拖机器人 2</h3>
+                        <p class="desc">经典延续，全面升级</p>
+                        <p class="price">
+                            <span class="num">1799元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad5.webp" alt=""></div>
+                        <h3 class="ad-title">米家集尘扫拖机器人</h3>
+                        <p class="desc">自动倒垃圾，45天手不沾尘</p>
+                        <p class="price">
+                            <span class="num">2999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">米家扫拖机器人1T</h3>
+                        <p class="desc">3D精准避障，扫拖不再碰撞</p>
+                        <p class="price">
+                            <span class="num">1999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">米家扫拖机器人</h3>
+                        <p class="desc">抗菌去渍二合一，开启生活新境界</p>
+                        <p class="price">
+                            <span class="num">1499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">米家扫拖机器人Pro</h3>
+                        <p class="desc">AI智能识别 3D精准避障</p>
+                        <p class="price">
+                            <span class="num">2699元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/shenghuo-ad/shenghuodianqi-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">米家无线吸尘器K10 Pro</h3>
+                        <p class="desc">吸拖一体，全屋清洁一机搞定</p>
+                        <p class="price">
+                            <span class="num">1999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">扫地机</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- 横向广告2 -->
+        <div id="ad-1"><a href=""><img src="./img/ad/ad-2.webp" alt=""></a></div>
+        <!-- 厨房电器板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>厨房电器
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">净水器</a></li>
+                    <li><a href="javascript:;">烟灶</a></li>
+                    <li><a href="javascript:;">电饭煲</a></li>
+                    <li><a href="javascript:;">微蒸烤</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 235* 300px  -->
+            <ul id="c-phone-adl">
+                <li><a href="javascript:;"><img src="./img/chufangdianqi-ad/chufangdianqi-ad1.webp" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/chufangdianqi-ad/chufangdianqi-ad2.webp" alt=""></a></li>
+            </ul>
+
+            <!-- 图片区右侧 -->
+            <ul id='phone-adr'>
+                <li class="phone-adlis">
+                    <!-- 234*260 padding：20px 0 ; -->
+                    <a href="javascript:;">
+                        <!-- 160*160 marign: 0 37px 18px 37px -->
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad3.webp" alt=""></div>
+                        <!-- 214*21  margin: 0 10px 2px 10px -->
+                        <h3 class="ad-title">小米净水器1200G</h3>
+                        <!-- 214*18  margin: 0 10px 10px 10px -->
+                        <p class="desc">3.2L/min大流量，鲜活首杯水</p>
+                        <!-- 214*21  margin: 0 10px 14px 10px -->
+                        <p class="price">
+                            <span class="num">3499元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">小米即热净水器Q600</h3>
+                        <p class="desc">净热一体，1秒速热，精选调温每1℃</p>
+                        <p class="price">
+                            <span class="num">3499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad5.webp" alt=""></div>
+                        <h3 class="ad-title">小米净水器H600G</h3>
+                        <p class="desc">纯净生活双出水，六级过滤健康直饮</p>
+                        <p class="price">
+                            <span class="num">1699元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">小米净水器600G</h3>
+                        <p class="desc">600加仑通量，流速更快</p>
+                        <p class="price">
+                            <span class="num">1499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">小米净水器S1 800G</h3>
+                        <p class="desc">APP检测水质，OLED屏显水龙头</p>
+                        <p class="price">
+                            <span class="num">2199元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">小米净水器H1000G</h3>
+                        <p class="desc">双RO反渗透净化，稳定高效过滤</p>
+                        <p class="price">
+                            <span class="num">2499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/chufangdianqi-ad/chufangdianqi-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">小米台式净饮机</h3>
+                        <p class="desc">即滤即热，乐享鲜活纯净水</p>
+                        <p class="price">
+                            <span class="num">1499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo-t">
+                            <h2 class="liulangengduo-p-t">小米净水器<br>400G增强版</h2>
+                            <p class="jiage-t">999元</p>
+                            <div class="liulangengduo-t-img"><img src="./img/chufangdianqi-ad/chufangdianqi-ad10.webp" alt=""></div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">净水器</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- 智能家居板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>智能家居
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">小爱音箱</a></li>
+                    <li><a href="javascript:;">门锁</a></li>
+                    <li><a href="javascript:;">路由器</a></li>
+                    <li><a href="javascript:;">智能设备</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 235* 300px  -->
+            <ul id="c-phone-adl">
+                <li><a href="javascript:;"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad1.webp" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad2.webp" alt=""></a></li>
+            </ul>
+
+            <!-- 图片区右侧 -->
+            <ul id='phone-adr'>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad3.webp" alt=""></div>
+                        <h3 class="ad-title">小米小爱音箱Play 增强版</h3>
+                        <p class="desc">是音箱也是床头时钟</p>
+                        <p class="price">
+                            <span class="num">149元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">Xiaomi Sound</h3>
+                        <p class="desc">小米高保真智能音箱</p>
+                        <p class="price">
+                            <span class="num">499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad5.webp" alt=""></div>
+                        <h3 class="ad-title">小米小爱音箱 Play</h3>
+                        <p class="desc">听音乐、语音遥控家具</p>
+                        <p class="price">
+                            <span class="num">99元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">小米小爱音箱 Pro</h3>
+                        <p class="desc">语音遥控5000+品牌主流家电</p>
+                        <p class="price">
+                            <span class="num">299元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">小米AI音箱（第二代）</h3>
+                        <p class="desc">小米AI音箱（第二代）</p>
+                        <p class="price">
+                            <span class="num">199元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">小米小爱触屏音箱</h3>
+                        <p class="desc">好听，更好看</p>
+                        <p class="price">
+                            <span class="num">249元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">小米小爱音箱</h3>
+                        <p class="desc">全面升级 旗舰音质</p>
+                        <p class="price">
+                            <span class="num">249元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo-t">
+                            <h2 class="liulangengduo-p-t">小米小爱音箱<br>Art 电池板</h2>
+                            <p class="jiage-t">349元</p>
+                            <div class="liulangengduo-t-img"><img src="./img/zhinengjiaju-ad/zhinengjiaju-ad10.webp" alt=""></div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">小爱音箱</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- 运动出行板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>运动出行
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">平衡车/滑板车</a></li>
+                    <li><a href="javascript:;">运动健身</a></li>
+                    <li><a href="javascript:;">箱包配饰</a></li>
+                    <li><a href="javascript:;">出行工具</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 235* 300px  -->
+            <ul id="c-phone-adl">
+                <li><a href="javascript:;"><img src="./img/yundongchuxing-ad/yundognchuxing-ad1.webp" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/yundongchuxing-ad/yundognchuxing-ad2.webp" alt=""></a></li>
+            </ul>
+
+            <!-- 图片区右侧 -->
+            <ul id='phone-adr'>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad3.jpg" alt=""></div>
+                        <h3 class="ad-title">九号平衡车</h3>
+                        <p class="desc">年轻人的酷玩具</p>
+                        <p class="price">
+                            <span class="num">2199元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">九号平衡车燃动版</h3>
+                        <p class="desc">燃动升级，随走随停</p>
+                        <p class="price">
+                            <span class="num">2599元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad5.png" alt=""></div>
+                        <h3 class="ad-title">九号平衡车 Plus</h3>
+                        <p class="desc">一个形影不离的新伙伴</p>
+                        <p class="price">
+                            <span class="num">3499元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">米家电动滑板车1S</h3>
+                        <p class="desc">型出格，行出色</p>
+                        <p class="price">
+                            <span class="num">2199元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">小米米家电动滑板车Pro</h3>
+                        <p class="desc">性能提升，动力更强劲</p>
+                        <p class="price">
+                            <span class="num">3099元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">九号卡丁车Pro兰博基尼定制版</h3>
+                        <p class="desc">九号卡丁车Pro兰博基尼定制版</p>
+                        <p class="price">
+                            <span class="num">9999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/yundongchuxing-ad/yundognchuxing-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">九号平衡车 改装套件（不含平衡车）</h3>
+                        <p class="desc">小朋友的大玩具，老顽童的小赛车</p>
+                        <p class="price">
+                            <span class="num">2999元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">平衡车/滑板车</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!-- 横向广告3 -->
+        <div id="ad-1"><a href=""><img src="./img/ad/ad-3.webp" alt=""></a></div>
+        <!-- 日用百货板块 -->
+        <div id="phone-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>日用百货
+                <ul class='fenlei'>
+                    <li><a href="javascript:;">个护健康</a></li>
+                    <li><a href="javascript:;">电源/线材</a></li>
+                    <li><a href="javascript:;">儿童用具</a></li>
+                    <li><a href="javascript:;">家居床品</a></li>
+                </ul>
+            </h2>
+
+            <!-- 图片区左侧 -->
+            <!-- 235* 300px  -->
+            <ul id="c-phone-adl">
+                <li><a href="javascript:;"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad1.webp" alt=""></a></li>
+                <li><a href="javascript:;"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad2.webp" alt=""></a></li>
+            </ul>
+
+            <!-- 图片区右侧 -->
+            <ul id='phone-adr'>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad3.webp" alt=""></div>
+                        <h3 class="ad-title">米家声波电动牙刷T700</h3>
+                        <p class="desc">米家声波电动牙刷T700</p>
+                        <p class="price">
+                            <span class="num">399元</span>
+                            <!-- 元
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad4.webp" alt=""></div>
+                        <h3 class="ad-title">米家电动剃须刀S500</h3>
+                        <p class="desc">浮动贴面更干净，减压设计更舒适</p>
+                        <p class="price">
+                            <span class="num">199元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad5.webp" alt=""></div>
+                        <h3 class="ad-title">米家理发器</h3>
+                        <p class="desc">米家理发器</p>
+                        <p class="price">
+                            <span class="num">149元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad6.webp" alt=""></div>
+                        <h3 class="ad-title">米家自动洗手机套装</h3>
+                        <p class="desc">伸手出泡，抑菌有效</p>
+                        <p class="price">
+                            <span class="num">79元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad7.webp" alt=""></div>
+                        <h3 class="ad-title">米家电动冲牙器</h3>
+                        <p class="desc">动力强劲，全方位清洁口腔</p>
+                        <p class="price">
+                            <span class="num">199元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad8.webp" alt=""></div>
+                        <h3 class="ad-title">米家声波电动牙刷T500</h3>
+                        <p class="desc">刷的干净、智能护齿</p>
+                        <p class="price">
+                            <span class="num">179元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+                <li class="phone-adlis topmar">
+                    <a href="javascript:;">
+                        <div class="phone-adimgbox"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad9.webp" alt=""></div>
+                        <h3 class="ad-title">米家电子体温计</h3>
+                        <p class="desc">快速知体温，精准更智能</p>
+                        <p class="price">
+                            <span class="num">99元</span>
+                            <!-- "元"
+                            <span class="qi">起</span> -->
+                        </p>
+                    </a>
+                </li>
+
+                <div class="liulanmore">
+                    <a href="javascript:;">
+                        <div class="liulangengduo-t">
+                            <h2 class="liulangengduo-p-t">米家自动香氛<br>机套装</h2>
+                            <p class="jiage-t">99元</p>
+                            <div class="liulangengduo-t-img"><img src="./img/riyongbaihuo-ad/riyongbaihuo-ad10.webp" alt=""></div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="liulangengduo">
+                            <h2 class="liulangengduo-p">浏览更多</h2>
+                            <p class="pinlei">个护健康</p>
+                            <i class="iconfont  icon-jiantou2"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <div id="shipin-ad">
+            <!-- 产品板块顶部文字 -->
+            <h2 class='ad-info'>视频
+                <div class='more'>
+                    <a href="">查看更多<i class="iconfont icon-jinrujiantouxiao"></i></a>
+                </div>
+            </h2>
+            <ul id="shipinlist">
+                <li><a href=""><img src="./img/shiping-ad/shipin-ad1.webp" alt=""></a><p class="shiping-p">2021年春季新品发布会第一场</p></li>
+                <li><a href=""><img src="./img/shiping-ad/shipin-ad2.webp" alt=""></a><p class="shiping-p">Redmi 10X系列发布会</p></li>
+                <li><a href=""><img src="./img/shiping-ad/shipin-ad3.webp" alt=""></a><p class="shiping-p">小米10 青春版 发布会</p></li>
+                <li><a href=""><img src="./img/shiping-ad/shipin-ad4.webp" alt=""></a><p class="shiping-p">小米10 8K手机拍大片</p></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-service">
+            <ul class="list-service">
+                <li><a href=""><i class="iconfont  icon-banshou"></i> 预约维修服务</a></li>
+                <li><a href=""><i class="iconfont  icon-7"></i> 7天无理由退货</a></li>
+                <li><a href=""><i class="iconfont  icon-15tianbaotui01"></i> 15天免费换货</a></li>
+                <li><a href=""><i class="iconfont  icon-liwu"></i> 满69包邮</a></li>
+                <li><a href=""><i class="iconfont  icon-didian"></i> 520余家售后网点</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd>
+                    <a href="">账户管理</a>
+                </dd>
+                <dd>
+                    <a href="">购物指南</a>
+                </dd>
+                <dd>
+                    <a href="">订单操作</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>服务支持</dt>
+                <dd>
+                    <a href="">售后政策</a>
+                </dd>
+                <dd>
+                    <a href="">自助服务</a>
+                </dd>
+                <dd>
+                    <a href="">相关下载</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>线下门店</dt>
+                <dd>
+                    <a href="">小米之家</a>
+                </dd>
+                <dd>
+                    <a href="">服务网点</a>
+                </dd>
+                <dd>
+                    <a href="">授权体验店/专区</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>关于小米</dt>
+                <dd>
+                    <a href="">了解小米</a>
+                </dd>
+                <dd>
+                    <a href="">加入小米</a>
+                </dd>
+                <dd>
+                    <a href="">投资者关系</a>
+                </dd>
+                <dd>
+                    <a href="">企业社会责任</a>
+                </dd>
+                <dd>
+                    <a href="">廉洁举报</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>关注我们</dt>
+                <dd>
+                    <a href="">新浪微博</a>
+                </dd>
+                <dd>
+                    <a href="">官方微信</a>
+                </dd>
+                <dd>
+                    <a href="">联系我们</a>
+                </dd>
+                <dd>
+                    <a href="">公益基金会</a>
+                </dd>
+            </dl>
+            <dl class="col-links">
+                <dt>特色服务</dt>
+                <dd>
+                    <a href="">F 码通道</a>
+                </dd>
+                <dd>
+                    <a href="">礼物码</a>
+                </dd>
+                <dd>
+                    <a href="">防伪查询</a>
+                </dd>
+            </dl>
+            <div class="col-contact">
+                <p class="tltphone">400-100-5678</p>
+                <p class="clock">8:00-18:00(仅收市电话）</p>
+                <a href="" class="line-btn">
+                    <i class="iconfont  icon-qipao"></i> 人工客服
+                </a>
+                <div class="follow">
+                    <span>关注小米:</span> 
+                    <a href="" class="iconfont  icon-xinlang"></a>
+                    <a href="" class="iconfont  icon-weixin" id="wxtubiao"></a>
+                    <img src="" alt="" id="follow-img">
+                    <a href="" class="wximg"><img id="wxi" src="./icon/wx-img.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="finner"></div>
+    <!-- 侧边功能栏 -->
+    <div class="home-tool-bar">
+        <a href="" class="ietm-cb"><div class="iconfont icon-shouji"></div><span class="text-cb">手机APP</span></a>
+        <a href="" class="ietm-cb"><div class="iconfont icon-renwu-ren"></div><span class="text-cb">个人中心</span></a>
+        <a href="" class="ietm-cb"><div class="iconfont icon-banshou"></div><span class="text-cb">售后服务</span></a>
+        <a href="" class="ietm-cb"><div class="iconfont icon-24gf-headset"></div><span class="text-cb">人工客服</span></a>
+        <a href="" class="ietm-cb"><div class="iconfont icon-gouwuche"></div><span class="text-cb">购物车</span></a>
+        <a href="" class="ietm-cb"><div class="iconfont icon-huidingbu"></div><span class="text-cb">回顶部</span></a>
+    </div>
+</body>
+
+</html>
