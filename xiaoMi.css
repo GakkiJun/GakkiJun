@@ -1,0 +1,1051 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    /**********************************************顶部导航栏****************************************************/
+
+#topbar{
+    height: 40px;
+    width: 100%;
+    background-color: #333333;
+}
+/* 内容区域盒子 */
+#topiner{
+    position: relative;
+    margin: 0 auto; 
+    width: 1226px;
+    height: 100%;
+}
+
+/************顶部内容区左半部分************/
+
+#topnav{
+    width: 794px;
+    height: 100%;
+    float: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 设置顶部所有的字体样式 */
+.topnav-a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #B0B0B0;
+}
+/* 设置顶部所有的 | 样式 */
+.sep{
+    font-size: 12px;
+    color: #3A3E3E;
+}
+/* 顶部所有超链接鼠标移入样式 */
+.topinfoL:hover a{
+    color: #ffffff;
+}
+
+/* 下拉下载app */
+#dwapp{
+    position: relative;
+}
+
+/* 鼠标移入时显示的小三角 */
+#Trigo{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white;
+    display: none;
+    top: 20px;
+    left: 20px;
+}
+
+/************app下载隐藏下拉框************/
+#appcode{
+    width: 125px;
+    height: 0;
+    position: absolute;
+    top: 30px;
+    overflow: hidden;
+    left: -40px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+    /* 设置优先级，以免被第二行元素覆盖 */
+    z-index: 10;
+    background-color: white;
+}
+/* 设置app下载图片大小以及位置 */
+#appcode img{
+    width: 88px;
+    height: 88px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/************顶部内容区右半部分************/
+
+
+/* 登录注册消息通知的盒子样式 */
+#topload{
+    position: absolute;
+    right: 140px;
+    float: right;
+    /* margin-right: 150px; */
+    width: 142.469px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#topload a:hover{
+    color: #fff;
+}
+
+
+/* 设置购物车样式 */
+#topshopcar{
+    position: absolute;
+    right: 0;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+}
+#topshopcar:hover a{
+    color: #FF6A00;
+}
+#gouwuche{
+    color: #B0B0B0;
+}
+
+
+/************鼠标移入时显示的下拉框************/
+#shopcar{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    /* 内部居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    /* 通过js控制高度达到下拉效果 */
+    /* height: 100px; */
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: white;
+    box-shadow: -4px 0 5px -3px rgba(0, 0, 0, 0.2),0 4px 5px -3px rgba(0, 0, 0, 0.2),4px 0 5px -3px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+    /* 设置优先级，以免被第二行元素覆盖 */
+    z-index: 10;
+}
+
+
+/* 主要商品分类区 */
+#mianInfo{
+    width: 100%;
+}
+/**********************************************第二行整体内容框****************************************************/
+#container{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/************logo部分样式************/
+#logo img{
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    width: 56px;
+    height: 56px;
+}
+
+/************中间导航栏部分************/
+
+/* 导航栏框架 */
+#navbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    margin-left: 240px;
+    
+}
+#navbox a{
+    text-decoration: none;
+    color: #000;
+    padding: 37px 9.5px 37px;
+}
+#navbox a:hover{
+    color: #FF6A00;
+}
+
+
+/************右侧搜索框部分************/
+
+/* 搜索总框架 */
+#search{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 298px;
+    height: 50px;
+    float: right;
+    right: 0;
+    top: 25px;
+}
+/* 搜索输入文本框 */
+#search-text{
+    width: 245px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    margin-left: 1px;
+    border-right: none;
+    outline:medium;
+    padding-left: 10px;
+}
+/* 搜索图标按键框 */
+#search-icon{
+    width: 52px;
+    height: 52px;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+}
+/* 设置搜索框内的图标 */
+#search-i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+}
+/* 鼠标移入搜索按键时的样式 */
+#search-icon:hover{
+    background-color: #FF6A00;
+    border-color: #FF6A00;
+}
+
+
+/************搜索区域下拉框************/
+
+#serch-text-xl{
+    position: absolute;
+    top: 51px;
+    left: 1px;
+    width: 244px;
+    /* height: 240px; */
+    height: 0;
+    padding-right: 1px;
+    border: 1px solid transparent;
+    border-top: none;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    z-index: 9;
+}
+/* 下拉框内容清除超链接样式 */
+#serch-text-xl a{
+    text-decoration: none;
+    color: black;
+}
+/* 设置内容样式 */
+.st-info{
+    height: 30px;
+    width: 236px;
+    font-size: 12px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.st-info:hover{
+    background-color: #FAFAFA;
+}
+
+
+
+
+/**********************************************第二行导航栏的下拉产品栏****************************************************/
+
+.shangpinnav{
+    width: 100%;
+    /* height: 230px; */
+    position: absolute;
+    /* 高度设置0，隐藏移除内容以达到隐藏下拉框目的 */
+    height: 0;
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    z-index: 5;
+}
+/************中间内容部分************/
+.shangpinbox{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 设置所有图片和文字的框子 */
+.shagnpin{
+    float: left;
+    width: 170px;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+/*让图片居中 */
+.shagnpin img{
+    margin-left: 5px;
+}
+
+/* 设置第一行文字 */
+.sp-main{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+    margin-bottom: 5px;
+}
+/* 设置价格文字样式 */
+.sp-info{
+    font-size: 12px;
+    color: #FF6A00;
+    text-align: center;
+}
+/* 给第一个图片框添加一个左边距，把整体往右边移动以达到居中的目的 */
+.shagnpin:nth-child(1){
+    margin-left: 75px;
+}
+/* 设置图片之间的隔断条 */
+.sp-i{
+    float: left;
+    margin-top: 45px;
+    margin-left: 10px;
+    height: 100px;
+    /* div高度为100，不添加宽度这样可以添加一个边的border，画出一条隔断线 */
+    border-left: 1px solid #E0E0E0;
+}
+
+
+
+/**********************************************第三部分****************************************************/
+
+#three{
+    width:100%;
+    height: 460px;
+
+}
+/* 内容区框 */
+#honme-hero{
+    position: relative;
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+}
+/************导航栏区域************/
+#categoryList{
+    position: absolute;
+    list-style: none;
+    width: 234px;
+    height: 430px;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* 导航栏li设置 */
+.category-item{
+    padding-left: 20px;
+    width: 224px;
+    height: 43px;
+    line-height: 43px;
+}
+/* li鼠标移入效果 */
+.category-item:hover{
+    background-color: #FF6A00;
+}
+/* li字体设置 */
+.category-item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+/* li右箭头图标样式 */
+.category-item a i{
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+    color: #DEDEDE;
+}
+/************两个切换图片按键************/
+.lunbotuBtn{
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    border: none;
+    background-color: transparent;
+    top: 195px;
+    color: #DBDAD9;
+}
+/* 按键箭头图标大小 */
+.lunbotuBtn i{
+    font-size: 40px;
+}
+/* 鼠标移入按键效果 */
+.lunbotuBtn:hover{
+    background-color: #494542;
+}
+/* 上一张按键样式 */
+#pre{
+    left: 234px;
+    border-radius: 0 2px 2px 0;
+}
+/* 下一张按键样式 */
+#next{
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+/************轮播图************/
+#lunbotubox{
+    width: 1226px;
+    height: 460px;
+    transition: 0.3s ease-in-out;
+}
+#lunbotubox img{
+    width: 100%;
+    
+}
+/* 小圆点的框 */
+#circlebox{
+    width: 70px;
+    height: 10px;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+/* 小圆点样式 */
+.circle{
+    float: left;
+    list-style: none;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    border: 2px solid #B3B3B3;
+    background-color: #918879;
+}
+/* 圆点选中样式 */
+.circlemain{
+    background-color: #E7E2D9;
+    border-color: #949494;
+}
+
+/*************第三部分导航栏的隐藏目录**************/
+/* 隐藏目录框 */
+.three-xl{
+    position: absolute;
+    top: 0;
+    left: 233px;
+    /* width: 992px; */
+    width: 0;
+    height: 458px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 12;
+    /* border: 1px solid #E0E0E0; */
+}
+/* 隐藏目录内部分块 */
+.three-xl ul{
+    list-style: none;
+    float: left;
+    width: 248px;
+    height: 458px;
+}
+/* 分块内部样式 */
+.three-xl ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height:74px;
+    padding-top: 2.3px;
+}
+.three-xl ul li a{
+    color: black;
+    font-size: 14px;
+}
+.three-xl ul li:hover a{
+    color: #FF6A00;
+}
+
+/**********************************************第四部分****************************************************/
+/* 第四部分大框 */
+#four{
+    width:100%;
+    height: 170px;
+    margin: 10px 0;
+}
+/* 内容框架 */
+#four-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1226px;
+    height: 170px;
+    margin: 0 auto;
+}
+/* 内容第一块功能区 */
+#funar{
+    width: 235px;
+    height: 170px;
+    background-color: #5F5750;
+    list-style: none;
+}
+/* 功能区内部单独分块 */
+#funar li{
+    float: left;
+    text-align: center;
+    line-height: 85px;
+    font-size: 12px;
+    width: 78px;
+    height: 85px;
+}
+#funar li a{
+    display: inline-block;
+    width: 78px;
+    height: 83px;
+    color: #BCB9B6;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+/* 设置图标位置及大小 */
+#funar li i{
+    position: absolute;
+    font-size: 30px;
+    top: -10px;
+    left: 25px;
+}
+/* 设置文字位置及大小 */
+#funar li span{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+}
+/* *************后面三张图片************* */
+.fourad{
+    width: 316px;
+    height: 170px;
+}
+.fourad img{
+    width: 100%;
+}
+
+
+/**********************************************商品细分展示区****************************************************/
+/* 商品内容展示区框 */
+section{
+    width: 100%;
+    height: 6390px;
+    background-color: #F5F5F5;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+/******************* 内容区的横向广告 ************* */
+#ad-1{
+    width: 1226px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/* ********************商品板块框架*************** */
+/* 所有商品展示板块的框 */
+#phone-ad{
+    width: 1226px;
+    height: 672px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/* 商品板块顶端文字 */
+.ad-info{
+    width: 1226px;
+    height: 58px;
+    line-height: 58px;
+    font-weight: lighter;
+}
+/* 顶端右侧  查看更多  文字及图标 */
+.more{
+    float: right;
+    font-size: 16px;
+}
+
+.more a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.more i{
+    margin-left: 15px;
+    float: right;
+    margin-top: 1px;
+    font-size: 20px;
+    color: #B0B0B0;
+    transition: 0.2s ease-in-out;
+}
+.more:hover a,
+.more:hover a i{
+    color: #FF6A00;
+}
+
+
+/* **************图片区*************** */
+
+/* 图片区左边单独一张 */
+#phone-adl{
+    width: 248px;
+    height: 614px;
+    float: left;
+}
+/* 鼠标移入时显示效果 */
+#phone-adl:hover img{
+    box-Shadow : 1px 1px 6px gray, -1px 1px 2px gray;
+    padding-top: -10px;
+    padding-bottom: -10px;
+}
+/* 左边单独图片大小 */
+#phone-adl img{
+    width: 234px;
+    height: 614px;
+    transition: 0.2s ease-in-out;
+    /* margin-left: -14px;
+    margin-bottom: -12px; */
+}
+
+/* *****************图片区右边ul************* */
+#phone-adr{
+    float: right;
+    width: 992px;
+    height: 613px;
+    margin-left: -14px;
+    margin-bottom: -12px;
+}
+/* 右侧图片li */
+.phone-adlis
+{
+    list-style: none;
+    float: left;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    margin-left: 14px;
+    background-color: white;
+    margin-top: 0;
+    transition: 0.2s ease-in-out;
+}
+.phone-adlis a{
+    text-decoration: none;
+    font-size: 12px;
+}
+/* 给给下四个li添加一个margin-top */
+.topmar{
+    margin-top: 13px;
+}
+
+/* 右侧商品图片在li中的位置 */
+.phone-adimgbox{
+    width: 160px;
+    height: 160px;
+    margin-left: 37px;
+    margin-bottom: 18px;
+}
+.phone-adimgbox img{
+    width: 100%;
+}
+/* 第一行文字 */
+.ad-title{
+    text-align: center;
+    margin-bottom: 2px;
+    color: black;
+    font-weight: 400;
+}
+/* 第二行文字 */
+.desc{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #BFBFBF;
+}
+/* 产品价格文字 */
+.price{
+    text-align: center;
+    color: #FF6A00;
+}
+
+/* ******************顶部分类 文字**************** */
+
+.fenlei{
+    list-style: none;
+    font-size: 16px;
+    float: right;
+}
+.fenlei li{
+    float: left;
+    margin-left: 30px;
+}
+.fenlei li a:hover{
+    padding-bottom: 2px;
+    color: #FF6A00;
+    border-bottom:2px solid #FF6A00;
+}
+.fenlei li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* **************商品展示中的浏览更多的父元素ul************* */
+
+.liulanmore{
+    width: 234px;
+    height: 260px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+.liulanmore a{
+    text-decoration: none;
+    color: black;
+}
+/* 商品战士中的浏览更多li小方块 */
+.liulangengduo{
+    width: 234px;
+    height: 145px;
+    position: relative;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+.liulangengduo:hover{
+    box-Shadow : 1px 1px 6px gray, -1px 1px 2px gray;
+}
+/* 浏览更多 文字样式及位置 */
+.liulangengduo-p{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+/* 箭头图标位置及样式 */
+.liulangengduo i{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 60px;
+    color: #FF6A00;
+}
+/* 浏览更多文字下方的小文字 */
+.pinlei{
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* ******************左侧两张图片时的板块************ */
+
+#c-phone-adl{
+    float: left;
+}
+/* 单独两个图片容器 */
+#c-phone-adl li{
+    list-style: none;
+    height: 300px;
+}
+/* 鼠标移入效果,同上 */
+#c-phone-adl li:hover{
+    box-Shadow : 1px 1px 6px gray, -1px 1px 2px gray;
+}
+/* 给第一个li添加下边距让两个图片分开距离 */
+#c-phone-adl li:first-child{
+    margin-bottom: 12px;
+}
+
+/* ***************商品展示区的浏览更多模块上方的小容器*********** */
+
+.liulangengduo-t{
+    width: 234px;
+    height: 145px;
+    position: relative;
+    background-color: white;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in-out;
+}
+/* 小方块中的文字 */
+.liulangengduo-p-t{
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* 鼠标移入效果 */
+.liulangengduo-t:hover{
+    box-Shadow : 1px 1px 6px gray, -1px 1px 2px gray;
+
+}
+/* 小方块中的价格文字 */
+.jiage-t{
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    font-size: 12px;
+    color: #FF6A00;
+}
+/* 小方块中的商品图片样式及位置 */
+.liulangengduo-t-img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 33px;
+    top: 25px;
+}
+
+/* ************************************最后一层视频广告区域********************** */
+
+#shipin-ad{
+    width: 1226px;
+    height: 335px;
+    margin: 0 auto;
+}
+/* 每个视频ad区的li容器 */
+#shipinlist li{
+    list-style: none;
+    float: left;
+    width: 295px;
+    height: 277px;
+    margin-left: 15px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+}
+#shipinlist li:hover{
+    box-Shadow : 1px 1px 6px gray, -1px 1px 2px gray;
+}
+/* 重置第一个li的边距,让他靠边 */
+#shipinlist li:first-child{
+    margin-left: 0;
+}
+/* 视频li中文字 */
+.shiping-p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/******************************************** 最底部框******************************* */
+
+footer{
+    height: 332.5px;
+    width: 100%;
+}
+
+/* *****************服务介绍区*********************** */
+
+.footer-service{
+    width: 1226px;
+    height: 25px;
+    padding: 27px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #E0E0E0;
+}
+/* 五个服务介绍容器 */
+.list-service li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 242.734px;
+    border-left: 1px solid #E0E0E0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.list-service li:hover a{
+    color: #FF6A00;
+}
+.list-service li:first-child{
+    border-left: none;
+}
+.list-service li i{
+    font-size: 25px;
+}
+.list-service li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* *******************公司相关内容细分区*************** */
+
+.footer-links{
+    width: 1226px;
+    height: 172.5px;
+    padding: 40 0;
+    margin: 0 auto;
+}
+/* 单列内容ul */
+.col-links{
+    width: 160px;
+    /* height: 116.5px; */
+    float: left;
+    margin-top: 40px;
+}
+/* 单列内容标题 */
+.col-links dt{
+    width: 160px;
+    height: 17.5px;
+    margin-top: -1;
+    margin-bottom: 26px;
+    font-size: 14px;
+    color:#424242;
+    line-height: 1.25;
+}
+/* 单列内容 */
+.col-links dd{
+    width: 160px;
+    height: 18px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.col-links dd a:hover{
+    color: #FF6A00;
+}
+.col-links dd a{
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+/* *************右侧联系方式区*********** */
+
+.col-contact{
+    float: right;
+    margin-top: 40px;
+    text-align: center;
+    width: 251px;
+    height: 111px;
+    border-left: 1px solid #E0E0E0;
+}
+/* 第一行电话样式 */
+.tltphone{
+    font-size: 22px;
+    color: #FF6A00;
+    margin-bottom: 5px;
+}
+/* 第二行时间样式 */
+.clock{
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* 第三行客服 */
+.line-btn{
+    text-decoration: none;
+    color: #FF6A00;
+    font-size: 12px;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 28px;
+    margin: 0 auto;
+    border: 1px solid #FF6A00;
+    transition: 0.2s ease-in-out;
+}
+.line-btn:hover{
+    color: white;
+    background-color: #FF6A00;
+}
+/* 第四行微博及微信公众号 */
+.follow{
+    width: 251px;
+    height: 21px;
+    margin-top: 10px;
+    font-size: 12px;
+    position: relative;
+}
+.follow a{
+    font-size: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #474747;
+}
+.follow a:hover{
+    color: #FF6A00;
+}
+/* 隐藏微信下拉二维码 */
+.wximg img{
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    width: 126px;
+    height: 126px;
+    display: none;
+    z-index: 2;
+}
+
+/* *******************************底部信息******************************** */
+
+#finner{
+    height: 200px;
+    width: 100%;
+}
+
+/* *******************************侧边功能区******************************** */
+.home-tool-bar{
+    width: 84px;
+    height: 561px;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: 99;
+}
+.ietm-cb{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 82px;
+    height: 90px;
+    margin-top: -1px;
+    background-color: white;
+    color: #757575;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    transition: 0.2s ease-in-out;
+}
+.ietm-cb:hover{
+    color: #FF6A00;
+}
+.ietm-cb:last-child{
+    margin-top: 14px;
+}
+.ietm-cb div{
+    font-size: 30px;
+    margin:0 auto 9px;
+    padding-top: 18px;
+}
+.text-cb{
+    font-size: 14px;
+}
